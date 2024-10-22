@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Портфолио</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="btn_close"><button class="btn_top">Наверх</button></div>
+    <!-- HEADER -->
+    <header class="header" id="main">
+        <div class="container">
+            <div class="header__nav">
+                <nav id="menu" class="menu">
+                    <ul>
+                        <li><a href="#main">Главная</a></li>
+                        <li><a href="#about">Обо мне</a></li>
+                        <li><a href="#skills">Навыки</a></li>
+                        <li><a href="#portfolio">Портфолио</a></li>
+                        <li><a href="#contacts">Контакты</a></li>
+                    </ul>
+                </nav>
+                <div class="burger" id="burger">
+                    <img src="img/menu.svg" alt="menu" class="burger-icon" id="burger-icon" >
+                </div>
+            </div>
+
+            <div class="header__banner">
+                <div class="burger_name">
+                    <div class="logo__name">Олег<br>Галчинский</div>
+                </div>
+                <div class="block__info">Front-End developer<br>20 лет, Гомель</div>
+            </div>
+
+            <div class="header__img">
+                <img class="img-screen" src="img/img.jpg" alt="img">
+                <img class="img-mobile" src="img/img-mobile.jpg" alt="img">
+            </div>
+        </div>
+    </header>
+    <!-- END HEADER -->
+
+    <!-- ABOUT -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="title">Обо мне</div>
+            <div class="about__descr">Привет, я Олег – Web разработчик из Гомеля. Интересуюсь версткой сайтов разной сложности. <br><br> Готов реализовывать отличные проекты с замечательными людьми.</div>
+        </div>
+    </section>
+    <!-- END ABOUT -->
+
+    <!-- SKILLS -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="title">Мои навыки</div>
+            <div class="skills-card-flex">
+                <div class="skills-card">
+                    <div class="card-header">
+                        <img src="img/html.svg" alt="">
+                        <span>HTML</span>
+                    </div>
+                    <div class="card-body">
+                        <ul>
+                            <li>Стандрарт HTML 5.2</li>
+                            <li>Контроль валидности кода</li>
+                            <li>Именование классов по методологии БЭМ</li>
+                            <li>Семантичная разметка</li>
+                            <li>Доступность интерфейсов</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="skills-card">
+                    <div class="card-header">
+                        <img src="img/css.svg" alt="">
+                        <span>CSS</span>
+                    </div>
+                    <div class="card-body">
+                        <ul>
+                            <li>Сетка на флексбоксах и гридах</li>
+                            <li>Адаптивная верстка</li>
+                            <li>Анимации, плавные переходы, Css-фильтры</li>
+                            <li>Устойчивость к переполнению контентом</li>
+                            <li>Кроссбраузерность</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="skills-card">
+                    <div class="card-header">
+                        <img src="img/js.svg" alt="">
+                        <span>JavaScript</span>
+                    </div>
+                    <div class="card-body">
+                        <ul>
+                            <li>Обработка событий</li>
+                            <li>Валидация форм</li>
+                            <li>Генерация DOM-элементов из шаблонов</li>
+                            <li>Использование объекта XMLHttpRequest</li>
+                            <li>Работа с canvas</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="skills-card">
+                    <div class="card-header">
+                        <img src="img/git.png" alt="">
+                        <span>Разное</span>
+                    </div>
+                    <div class="card-body">
+                        <ul>
+                            <li>Система контроля версий Git</li>
+                            <li>Работа с графикой в Photoshop, Figma</li>
+                            <li>Препроцессоры Sass и Less</li>
+                            <li>Сборка и автоматизация проекта на Gulp</li>
+                            <li>Размещение сайта на хостинге</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END SKILLS -->
+
+    <!-- PORTFOLIO -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <div class="title">Портфолио</div>
+            <div class="grid-container">
+                <article class="location-listing">
+                    <a class="location-title" target="_blank" href="https://NeRGaTBooT.github.io/hitechServices/">HitechServices</a>
+                    <div class="location-image">
+                        <a href="https://NeRGaTBooT.github.io/hitechServices/" target="_blank">
+                            <img width="300" height="169" src="img/p1.jpg" alt="HitechServices">
+                        </a>
+                    </div>
+                </article>
+                <article class="location-listing">
+                    <a class="location-title" href="https://nergatboot.github.io/KMarketer/" target="_blank">KMarketer</a>
+                    <div class="location-image">
+                        <a href="https://nergatboot.github.io/KMarketer/" target="_blank">
+                            <img width="300" height="169" src="img/p2.jpg" alt="KMarketer">
+                        </a>
+                    </div>
+                </article>
+                <article class="location-listing">
+                    <a class="location-title" href="#" target="_blank">HitechServices</a>
+                    <div class="location-image">
+                        <a href="https://NeRGaTBooT.github.io/hitechServices/" target="_blank">
+                            <img width="300" height="169" src="img/p3.jpg" alt="HitechServices">
+                        </a>
+                    </div>
+                </article>
+                <article class="location-listing">
+                    <a class="location-title" href="#" target="_blank">HitechServices</a>
+                    <div class="location-image">
+                        <a href="https://NeRGaTBooT.github.io/hitechServices/" target="_blank">
+                            <img width="300" height="169" src="img/p3.jpg" alt="HitechServices">
+                        </a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+    <!-- END PORTFOLIO -->
+
+    <!-- CONTACTS -->
+    <section id="contacts" class="contacts">
+        <div class="container">
+            <div class="title">Напиши мне</div>
+            <div class="contacts__descr">
+                Возникло желание познакомиться поближе или уточнить детали? Воспользуйтесь этой формой и я обязательно отвечу Вам.
+            </div>
+            <form action="#" class="form">
+                <input type="text" name="name_input" id="" placeholder="Имя">
+                <input type="email" name="email_input" id="" placeholder="E-mail">
+                <textarea name="text_input" id="" cols="30" rows="10" placeholder="Сообщение"></textarea>
+                <input class="form_btn js-open-modal" type="button" data-modal="1" value="Отправить сообщение">
+            </form>
+            <div class=" contacts__social ">
+                <div class="social-link">
+                    <a href="https://vk.com/galchinsky.oleg " target="_blank "><span class="icon-vk "></span></a>
+                </div>
+                <div class="social-link">
+                    <a href="https://www.instagram.com/galchinsky_oleg/?hl=ru " target="_blank "><span class="icon-instagram "></span></a>
+                </div>
+                <div class="social-link">
+                    <a href="https://t.me/galchinskyOleg " target="_blank "><span class="icon-telegram "></span></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END CONTACTS -->
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__descr">&copy; 2021 Galchinsky Oleg</div>
+        </div>
+    </footer>
+    <!-- END FOOTER -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js "></script>
+    <script src="js/main.js "></script>
+</body>
+</html>

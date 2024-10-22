@@ -1,0 +1,405 @@
+@font-face {
+  font-family: "Gilroy-Medium";
+  font-weight: 500;
+  font-style: normal;
+  src: url("../fonts/Gilroy-Medium.woff2") format("woff2"),
+    url("../font/Gilroy-Medium.woff") format("woff");
+}
+@font-face {
+  font-family: "Gilroy-Bold";
+  font-weight: 700;
+  font-style: normal;
+  src: url("../fonts/Gilroy-Bold.woff2") format("woff2"),
+    url("../font/Gilroy-Bold.woff") format("woff");
+}
+@font-face {
+  font-family: "icomoon";
+  src: url("../fonts/icomoon.eot?haicqz");
+  src: url("../fonts/icomoon.eot?haicqz#iefix") format("embedded-opentype"),
+    url("../fonts/icomoon.ttf?haicqz") format("truetype"),
+    url("../fonts/icomoon.woff?haicqz") format("woff"),
+    url("../fonts/icomoon.svg?haicqz#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+[class^="icon-"],
+[class*=" icon-"] {
+  font-family: "icomoon" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-instagram:before {
+  content: "\ea92";
+}
+.icon-telegram:before {
+  content: "\ea95";
+}
+.icon-vk:before {
+  content: "\ea98";
+}
+html {
+  box-sizing: border-box;
+}
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+input,
+textarea {
+  outline: none;
+}
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+img {
+  width: 100%;
+  height: auto;
+}
+.container {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 940px;
+  padding: 0 15px;
+}
+body {
+  font-family: "Gilroy-Medium", "sans-serif";
+  font-size: 18px;
+}
+body.overflow {
+  overflow: hidden;
+}
+.menu {
+  font-family: "Gilroy-Bold", sans-serif;
+  padding-top: 33px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #1f5a54;
+}
+.menu ul {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.menu ul li a {
+  text-decoration: none;
+  color: #828282;
+  transition: all ease 0.3s;
+}
+.menu ul li a:hover {
+  color: #1f5a54;
+  transition: all ease 0.3s;
+}
+
+.burger {
+  display: none; /* Скрыть бургер-меню по умолчанию */
+  cursor: pointer;
+}
+
+.burger-icon {
+  outline: none; /* Убираем стандартное выделение при нажатии */
+}
+
+.burger img {
+  width: 25px;
+  height: 25px;
+  margin: 4px 0;
+}
+
+.header__banner {
+  font-family: "Gilroy-Bold", sans-serif;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 35px;
+}
+.logo__name {
+  font-size: 47px;
+}
+.block__info {
+  align-self: flex-end;
+  margin-bottom: 5px;
+}
+
+.header__img {
+  margin-top: 30px;
+  margin-bottom: 105px;
+}
+.img-mobile {
+  display: none;
+}
+.about {
+  text-align: center;
+  background-color: #f6f6f6;
+  padding: 105px 0 105px 0;
+}
+.title {
+  font-family: "Gilroy-Bold", sans-serif;
+  font-size: 34px;
+  margin-bottom: 17px;
+  text-align: center;
+}
+.skills {
+  padding: 105px 0 105px 0;
+}
+.skills img {
+  width: 80px;
+  height: 80px;
+}
+.skills-card-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 50px;
+}
+.skills-card {
+  font-size: 16px;
+  width: 430px;
+}
+.skills-card .card-header {
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.skills-card .card-body {
+  padding: 20px;
+  text-align: center;
+  background-color: #f6f6f6;
+}
+.skills-card .card-body ul li {
+  line-height: 23px;
+}
+.portfolio {
+  padding: 105px 0 105px 0;
+  background-color: #f6f6f6;
+}
+.portfolio .title {
+  margin-bottom: 47px;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 1em;
+}
+.location-listing {
+  position: relative;
+}
+.location-image {
+  line-height: 0;
+  overflow: hidden;
+}
+.location-image img {
+  -webkit-filter: blur(0px);
+  filter: blur(0px);
+  transition: -webkit-filter 0.3s ease-in;
+  transition: filter 0.3s ease-in;
+  transition: filter 0.3s ease-in, -webkit-filter 0.3s ease-in;
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+.location-title {
+  font-size: 1.5em;
+  font-weight: bold;
+  text-decoration: none;
+  z-index: 1;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.5s;
+  background: rgba(31, 90, 84, 0.4);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.location-listing:hover .location-title {
+  opacity: 1;
+}
+.location-listing:hover .location-image img {
+  -webkit-filter: blur(2px);
+  filter: blur(2px);
+}
+.contacts {
+  position: relative;
+  padding: 105px 0 105px 0;
+  text-align: center;
+}
+.contacts .title {
+  margin-bottom: 20px;
+}
+.contacts__descr {
+  line-height: 22px;
+  margin-bottom: 30px;
+}
+.contacts__social {
+  display: flex;
+  justify-content: center;
+  margin-top: 85px;
+}
+.contacts__social .social-link {
+  margin-right: 60px;
+}
+.contacts__social .social-link a {
+  text-decoration: none;
+}
+.contacts__social .social-link a span {
+  transition: all ease 0.3s;
+  color: #000;
+  font-size: 35px;
+}
+.contacts__social .social-link a span:hover {
+  transition: all ease 0.3s;
+}
+.contacts__social .social-link:last-child {
+  margin-right: 0;
+}
+.form {
+  width: 100%;
+  margin: 0 auto;
+}
+.form input,
+.form textarea {
+  padding: 13px;
+  width: 100%;
+  border: 1px solid #1f5a54;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  resize: none;
+}
+.form .form_btn {
+  text-transform: uppercase;
+  font-family: "Gilroy-Bold", sans-serif;
+  background-color: #1f5a54;
+  color: #fff;
+  transition: all ease 0.3s;
+}
+.form .form_btn:hover {
+  cursor: pointer;
+  background-color: #9ec9c5;
+  color: #1f5a54;
+  transition: all ease 0.3s;
+}
+.footer {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 50px 0;
+}
+.btn_top {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 40px;
+  z-index: 999;
+  border: 1px solid #1f5a54;
+  outline: none;
+  background-color: #1f5a54;
+  color: #fff;
+  cursor: pointer;
+  padding: 15px 40px;
+  border-radius: 10px;
+  transition: all ease 0.3s;
+}
+.btn_top:hover {
+  background-color: #9ec9c5;
+  color: #1f5a54;
+  transition: all ease 0.3s;
+}
+
+
+@media (max-width: 768px) {
+  .menu {
+    display: none; /* Скрыть навигацию по умолчанию */
+    width: 100%;
+    height: 100%;
+    background-color: #282828; /* Цвет фона меню */
+    position: absolute;
+    top: 0; /* Позиция меню под хедером */
+    left: 0;
+    z-index: 10;
+    transform: translateX(-1000px); /* Начальное смещение */
+    transition: opacity 0.3s ease, transform 0.3s ease; /* Плавный переход */
+    text-align: center;
+  }
+  .menu ul{
+    flex-direction: column;
+    gap: 30px;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .header__nav{
+    padding: 10px;
+  }
+
+  .menu ul li a{
+    color: #fff;
+    font-size: 30px;
+  }
+
+  .menu.active {
+    display: block; /* Показать меню при активации */
+    opacity: 1; /* Полная непрозрачность */
+    transform: translateX(0); /* Возвращаем в исходное положение */
+  }
+  .menu.active {
+    display: block; /* Показать меню при активации */
+    opacity: 1; /* Полная непрозрачность */
+    transform: translateX(0); /* Возвращаем в исходное положение */
+  }
+
+  .burger {
+    display: flex; /* Показать бургер-меню на мобильных устройствах */
+    justify-content: end;
+  }
+
+  .burger img{
+    z-index: 99999;
+  }
+
+}
+@media (max-width: 320px) {
+  .logo__name {
+    font-size: 30px;
+  }
+  .block__info {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 940px) {
+  .skills-card-flex {
+    justify-content: center;
+  }
+}
+
+@media (hover: none) {
+  .location-title {
+  opacity: 1;
+  }
+  .location-image img {
+  -webkit-filter: blur(2px);
+  filter: blur(2px);
+  }
+}
